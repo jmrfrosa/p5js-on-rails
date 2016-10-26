@@ -1,0 +1,25 @@
+* {
+    font-family: "Helvetica Neue", "Arial", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 5em;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.center-div {
+    text-align: center;
+}
+
+#p5canvas {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 8px;
+}
