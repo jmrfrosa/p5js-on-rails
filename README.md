@@ -4,4 +4,4 @@ Small application running a P5.js script inside. This is intended to serve as a 
 
 Rails version: 5.0.0.1
 
-Just `rails s` and edit your canvas code inside `app/assets/javascripts/pages/p5canvas.js`.
+Just `rails s` and edit your canvas code inside `app/views/pages/_p1_canvas.html.erb`.
