@@ -1,0 +1,21 @@
+<div class="center-div">
+  <h3>P5.js Canvas</h3>
+  <h4>Update action</h4>
+  <debug><%= @size %></debug>
+  <debug><%= @width %> x <%= @height %></debug>
+  <p id="canvas-size"></p>
+  <div id="p5canvas">
+  </div>
+</div>
+
+<%= form_for :size do |f| %>
+  <%= f.select :size, options_for_select([["1024x768"],["800x600"],["640x480"]]) %>
+  <%= f.submit %>
+<% end %>
+
+<%# Not needed since file is already included in pipeline %>
+<%# TO-DO: Tweaks/gem for page-specific javascript %>
+
+<%# javascript_include_tag "p5canvas" %>
+
+<%= render 'p1_canvas' %>
