@@ -1,13 +1,13 @@
 class PagesController < ApplicationController
 
   def show
-    @width = 800
-    @height = 600
+    @width ||= 800
+    @height ||= 600
   end
 
   def update
-    @size = params[:size]
-    case @size.fetch(:size)
+    @size = params[:resolution]
+    case @size[:res_string]
     when "640x480"
       @width = 640
       @height = 480
@@ -18,6 +18,7 @@ class PagesController < ApplicationController
       @width = 1024
       @height = 768
     end
+    render :show
   end
 
 end
