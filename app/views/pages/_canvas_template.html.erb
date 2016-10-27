@@ -1,0 +1,16 @@
+<div class="center-div">
+
+  <h3>P5.js Canvas</h3>
+
+  <%= form_for :resolution, url: pages_show_path do |f| %>
+    <%= f.select :res_string, options_for_select([["1024x768"],["800x600"],["640x480"]]) %>
+    <%= f.submit "Reload" %>
+  <% end %>
+
+  <p id="canvas-size"></p>
+  <div id="p5canvas">
+  </div>
+
+</div>
+
+<%= render 'p1_canvas' %>
