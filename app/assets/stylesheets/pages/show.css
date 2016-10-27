@@ -14,8 +14,16 @@ p {
     padding: 5px;
 }
 
+select {
+    width: 10em;
+    margin: 10px;
+    border: solid #f1f1f1;
+    border-radius: 5px;
+}
+
 .center-div {
     text-align: center;
+    margin: 0px 20px 40px 20px;
 }
 
 #p5canvas {
