@@ -1,3 +1,11 @@
-<h3><%= @sketch.title %></h3>
+<div class="container">
 
-<%= render @sketch %>
+  <p class="sketch-title"><%= @sketch.title %></p>
+
+  <small><%= @sketch.description %></small>
+
+  <div class="box-code">
+    <%= simple_format @sketch.code, class: "code" %>
+  </div>
+
+</div>
