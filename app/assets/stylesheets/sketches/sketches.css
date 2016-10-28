@@ -31,7 +31,11 @@ p.code {
 }
 
 .rounded-box {
-    margin-bottom: 1.5em;
+    position: relative;
+    width: 20em;
+    height: 10em;
+    display: block;
+    margin: 1em;
     padding: 1em;
     border: 2px solid lightgray;
     border-radius: 10px;
@@ -48,6 +52,13 @@ p.code {
 
 .sketch-title {
     font-size: 1.5em;
+}
+
+.sketch-info {
+    width: 20em;
+    height: 9em;
+    overflow: hidden;
+    display: block;
 }
 
 .sketch-form {
