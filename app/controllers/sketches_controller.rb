@@ -1,5 +1,5 @@
 class SketchesController < ApplicationController
-  before_action :set_post, only: [:show, :create, :update, :destroy]
+  before_action :set_sketch, only: [:show, :edit, :update, :destroy]
 
   def index
     @sketches = Sketch.all
@@ -23,6 +23,7 @@ class SketchesController < ApplicationController
 
   def create
     @sketch = Sketch.new(sketch_params)
+    @sketch.code = @sketch.code.strip
     if @sketch.save
       redirect_to @sketch
     else
@@ -41,13 +42,13 @@ class SketchesController < ApplicationController
   end
 
   def destroy
-    @post.destroy
+    @sketch.destroy
     redirect_to sketches_url
   end
 
   private
 
-    def set_post
+    def set_sketch
       @sketch = Sketch.find(params[:id])
     end
 
