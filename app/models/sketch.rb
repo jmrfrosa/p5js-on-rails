@@ -1,0 +1,5 @@
+class Sketch < ApplicationRecord
+
+
+
+end
