@@ -8,12 +8,29 @@ class SketchesController < ApplicationController
   def show
   end
 
+  # Sketch needs to be initialized without parameters or it'll ask for them
+  # and raise an error. This is the way it's done in the scaffold.
+
+  def new
+    @sketch = Sketch.new
+  end
+
   def edit
   end
 
+  # Resources automatically maps :create to the POST verb, so
+  # we magically end up here after submitting the 'new' form
+
   def create
     @sketch = Sketch.new(sketch_params)
+    if @sketch.save
+      redirect_to @sketch
+    else
+      render :new
+    end
   end
+
+  # Same happens with :update and :edit
 
   def update
     if @sketch.update(sketch_params)
