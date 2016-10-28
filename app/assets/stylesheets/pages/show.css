@@ -26,11 +26,19 @@ select {
     border-radius: 5px;
 }
 
+flex {
+    display: flex;
+}
+
 .main-link {
     display: block;
     margin-top: 1em;
 }
 
+.links-bottom {
+    position: absolute;
+    bottom: 1em;
+}
 .center-div {
     text-align: center;
     margin: 0px 20px 40px 20px;
