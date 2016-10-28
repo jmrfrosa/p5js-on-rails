@@ -1,0 +1,17 @@
+<div class="rounded-box inline">
+
+  <ul>
+    <li>
+      <p class="sketch-title"><%= sketch.title %></p>
+    </li>
+    <li>
+      <p>Description:</p>
+      <small><%= sketch.description %></small>
+    </li>
+  </ul>
+  <br>
+  <%# Passing 'sketch' as an argument here is enough for it to route to show path %>
+  <small><%= link_to "Open", sketch %></small>
+  <small><%= link_to "Delete", sketch, method: :delete %>
+
+</div>
