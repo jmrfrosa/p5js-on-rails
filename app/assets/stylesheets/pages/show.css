@@ -10,7 +10,12 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
+    padding: 5px;
+}
+
+small {
+    font-size: 0.85em;
     padding: 5px;
 }
 
@@ -19,6 +24,11 @@ select {
     margin: 10px;
     border: solid #f1f1f1;
     border-radius: 5px;
+}
+
+.main-link {
+    display: block;
+    margin-top: 1em;
 }
 
 .center-div {
