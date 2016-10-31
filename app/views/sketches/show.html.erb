@@ -8,4 +8,7 @@
     <%= simple_format @sketch.code, class: "code" %>
   </div>
 
+  <small><%= link_to "Edit", edit_sketch_path(@sketch) %></small>
+  <small><%= link_to "Delete", @sketch, method: :delete %></small>
+
 </div>

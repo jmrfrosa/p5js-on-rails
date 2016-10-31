@@ -14,6 +14,7 @@
   <%# Passing 'sketch' as an argument here is enough for it to route to show path %>
   <div class="links-bottom">
       <small><%= link_to "Open", sketch %></small>
+      <small><%= link_to "Edit", edit_sketch_path(sketch) %></small>
       <small><%= link_to "Delete", sketch, method: :delete %></small>
   </div>
 </div>
