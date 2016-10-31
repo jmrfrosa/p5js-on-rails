@@ -77,3 +77,9 @@ p.code {
     width: 50em;
     height: 50em;
 }
+
+#sketch-canvas {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 8px;
+}
