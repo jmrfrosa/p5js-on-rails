@@ -1,4 +1,5 @@
 class SketchesController < ApplicationController
+  # This runs set_sketch method before every action listed, making @sketch available in a DRY way
   before_action :set_sketch, only: [:show, :edit, :update, :destroy]
 
   def index
