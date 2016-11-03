@@ -8,9 +8,28 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <h1><%= link_to "Sketches", sketches_path %></h1>
-
   <body>
-    <%= yield %>
+
+    <!-- Start Navbar -->
+    <section id="navbar">
+      <div class="navbar-top">
+        <div class="navbar-brand">
+           <h1><%= link_to "Sketches", sketches_path %></h1>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><%= link_to "Sample Sketch", root_path %></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Navbar -->
+
+    <section class="main-container">
+
+      <%= yield %>
+
+    </section>
   </body>
 </html>
