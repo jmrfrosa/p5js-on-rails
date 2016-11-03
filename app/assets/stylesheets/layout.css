@@ -1,0 +1,27 @@
+.navbar-top {
+    display: flex;
+    box-shadow: 0 .2em 5px #888;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.navbar-brand {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.navbar-links {
+    display: inline-block;
+}
+
+.navbar-top a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+}
+
+.main-container {
+
+}
